@@ -33,56 +33,130 @@ export const TrackEventSection = styled.section`
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
 
   display: flex;
-  flex-direction: column;
   max-width: 1080px;
   margin: 0 auto;
   width: 1080px;
-  height: 590px;
+  height: 600px;
 
-  h1 {
-    color: #999999;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    margin: 30px auto 30px;
-  }
+  aside {
+    max-width: 536px;
+    width: 100%;
 
-  form {
-    display: flex;
-    flex-direction: row;
-    place-content: center;
+    header {
+      display: flex;
+      margin: 18px 0px 20px 48px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #7b8b99;
+      color: black;
 
-    div {
-      width: 480px;
-    }
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+        font-weight: 500;
 
-    div.primaryDiv,
-    div.secondDiv {
-      margin-top: 30px;
-    }
+        & + p {
+          margin-left: 195px;
+        }
 
-    div + div.secondDiv {
-      margin-left: 57px;
-      margin-top: 30px;
-    }
-
-    input {
-      &::-webkit-outer-spin-button,
-      &::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
+        span {
+          text-align: center;
+          font-size: 40px;
+          color: #6356f5;
+        }
       }
     }
 
-    div:nth-of-type(2),
-    div:nth-of-type(3) {
-      margin-top: 24px;
+    section {
+      border-right: 2px solid #7b8b99;
+
+      div {
+        display: flex;
+        justify-content: center;
+        margin-left: 46px;
+      }
+
+      p {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        color: black;
+        margin: 40px 0px 40px 0px;
+        font-size: 20px;
+        font-weight: 500;
+
+        span {
+          text-align: center;
+          font-size: 40px;
+          color: #e88239;
+        }
+      }
+
+      ul {
+        margin: 0px 0px 23px 57px;
+        span {
+          text-align: center;
+          font-size: 20px;
+          color: black;
+        }
+        li {
+          list-style: none;
+          color: #7b8b99;
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
     }
   }
 
-  button {
-    align-self: center;
-    width: 480px;
-    margin-top: 125px;
+  div {
+    max-width: 450px;
+    width: 100%;
+    margin-left: 57px;
+
+    h2 {
+      margin-top: 78px;
+      margin-bottom: 23px;
+      color: black;
+    }
+
+    div {
+      margin-left: 0px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      color: black;
+
+      li {
+        font-size: 18px;
+        border-bottom: 1px solid #7b8b99;
+
+        & + li {
+          margin-top: 5px;
+        }
+      }
+
+      li:nth-child(even) {
+        svg {
+          margin-right: 10px;
+          color: green;
+        }
+      }
+      li:nth-child(odd) {
+        svg {
+          margin-right: 10px;
+          color: red;
+        }
+      }
+    }
+    nav {
+      color: black;
+      margin-top: 55px;
+      text-align: center;
+    }
   }
 `;
