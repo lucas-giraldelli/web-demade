@@ -8,7 +8,6 @@ import {
   FiGift,
   FiDollarSign,
   FiMaximize2,
-  FiArrowLeft,
 } from 'react-icons/fi';
 import Nav from '../../components/Nav';
 import Input from '../../components/Input';
@@ -18,6 +17,12 @@ import { Container, CreateEventSection } from './styles';
 
 function handleSubmit(data: object): void {
   console.log(data);
+
+  const url = window.location.href.split('/');
+
+  url.pop();
+
+  window.location.href = `${url.join('/')}/trackevent`;
 }
 
 const Dashboard: React.FC = () => {
@@ -26,7 +31,7 @@ const Dashboard: React.FC = () => {
       <Nav />
       <h1>Novo evento</h1>
       <CreateEventSection>
-        <Form onSubmit={handleSubmit}>
+        <Form id="createNewEvent" onSubmit={handleSubmit}>
           <div className="primaryDiv">
             <h1>
               Descreva sobre o seu evento online para você acompanhar as
@@ -75,7 +80,9 @@ const Dashboard: React.FC = () => {
             />
           </div>
         </Form>
-        <Button type="submit">Finalizar</Button>
+        <Button type="submit" form="createNewEvent">
+          Finalizar
+        </Button>
       </CreateEventSection>
     </Container>
   );
