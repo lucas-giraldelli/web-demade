@@ -1,4 +1,5 @@
 import React from 'react';
+import { Form } from '@unform/web';
 
 import {
   FiHash,
@@ -13,61 +14,69 @@ import Button from '../../components/Button';
 
 import { Container, CreateEventSection } from './styles';
 
-const Dashboard: React.FC = () => (
-  <Container>
-    <Nav />
-    <h1>Novo evento</h1>
-    <CreateEventSection>
-      <form>
-        <div className="primaryDiv">
-          <h1>
-            Descreva sobre o seu evento online para você acompanhar as entregas.
-          </h1>
+function handleSubmit(data: object): void {
+  console.log(data);
+}
 
-          <Input
-            type="text"
-            name="eventName"
-            icon={FiPlay}
-            placeholder="Nome do evento"
-          />
+const Dashboard: React.FC = () => {
+  return (
+    <Container>
+      <Nav />
+      <h1>Novo evento</h1>
+      <CreateEventSection>
+        <Form onSubmit={handleSubmit}>
+          <div className="primaryDiv">
+            <h1>
+              Descreva sobre o seu evento online para você acompanhar as
+              entregas.
+            </h1>
 
-          <Input
-            type="number"
-            name="eventPeoples"
-            icon={FiHash}
-            placeholder="Quantidade de pessoas"
-          />
-        </div>
-        <div className="secondDiv">
-          <h1>
-            Descreva sobre o seu evento online para você acompanhar as entregas.
-          </h1>
+            <Input
+              type="text"
+              name="eventName"
+              icon={FiPlay}
+              placeholder="Nome do evento"
+            />
 
-          <Input
-            type="text"
-            name="eventGiftName"
-            icon={FiGift}
-            placeholder="Nome do presente"
-          />
+            <Input
+              type="number"
+              name="eventPeoples"
+              icon={FiHash}
+              placeholder="Quantidade de pessoas"
+            />
+          </div>
+          <div className="secondDiv">
+            <h1>
+              Descreva sobre o seu evento online para você acompanhar as
+              entregas.
+            </h1>
 
-          <Input
-            type="text"
-            name="eventGiftDimensions"
-            icon={FiMaximize2}
-            placeholder="Dimensões do presente"
-          />
+            <Input
+              type="text"
+              name="eventGiftName"
+              icon={FiGift}
+              placeholder="Nome do presente"
+            />
 
-          <Input
-            type="number"
-            name="eventGiftPrice"
-            icon={FiDollarSign}
-            placeholder="Preço do presente"
-          />
-        </div>
-      </form>
-      <Button type="submit">Finalizar</Button>
-    </CreateEventSection>
-  </Container>
-);
+            <Input
+              type="text"
+              name="eventGiftDimensions"
+              icon={FiMaximize2}
+              placeholder="Dimensões do presente"
+            />
+
+            <Input
+              type="number"
+              name="eventGiftPrice"
+              icon={FiDollarSign}
+              placeholder="Preço do presente"
+            />
+          </div>
+        </Form>
+        <Button type="submit">Finalizar</Button>
+      </CreateEventSection>
+    </Container>
+  );
+};
 
 export default Dashboard;
