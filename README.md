@@ -15,6 +15,6 @@
 O que o **Demade** oferece?<br /><br />
   A pergunta que fizemos foi: "Qual é a diferença entre um evento presencial e um online?", podemos citar inúmeros, certo?, porém um dos que mais falta quando se trata em eventos online é _aquele lanchinho, salgadinho, bebida, etc, que ajuda a controlar a fome e focar no evento_, isso pode potencializar inúmeros eventos online de empresas que estão começando agora e querem garantir seu público, esta é a proposta do **Demade**.<br /><br />
   O **Demade** oferece uma plataforma onde quem está promovendo um evento online, pode levar um "pedacinho" do evento presencial para a casa de cada participante.<br /><br />
-  Através da plataforma é possível cadastar um evento e a ele acoplar um presente, com isso sendo possível enviar em massa para multiplos participantes do evento, tendo um rastreamento desse presente.<br />
+  Através da plataforma é possível cadastar um evento e a ele acoplar um presente, com isso sendo possível enviar em massa para multiplos participantes do antes evento, tendo um rastreamento desse presente.<br />
   
   
