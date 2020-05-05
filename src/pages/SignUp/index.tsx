@@ -13,6 +13,8 @@ import { Container, Content, Background } from './styles';
 const SignUp: React.FC = () => {
   function handleSubmit(data: object): void {
     console.log(data);
+
+    window.location.href = `${window.location.href}dashboard`;
   }
 
   return (

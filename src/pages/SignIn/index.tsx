@@ -13,6 +13,8 @@ import { Container, Content, Background } from './styles';
 const SignIn: React.FC = () => {
   function handleSubmit(data: object): void {
     console.log(data);
+
+    window.location.href = `${window.location.href}dashboard`;
   }
 
   return (
@@ -34,7 +36,7 @@ const SignIn: React.FC = () => {
 
           <Button type="submit">Entrar</Button>
 
-          {/* <a href="forgot">Esqueci minha senha</a> */}
+          <a href="forgot">Esqueci minha senha</a>
         </Form>
 
         <Link to="/signup">
