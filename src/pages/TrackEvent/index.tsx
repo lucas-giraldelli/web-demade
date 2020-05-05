@@ -36,12 +36,7 @@ const Dashboard: React.FC = () => (
       </aside>
       <div>
         <h2>Status de entregas</h2>
-        <Input
-          type="text"
-          name="search"
-          icon={FiSearch}
-          placeholder="Pesquisar entrega"
-        />
+        <input type="text" name="search" placeholder="Pesquisar entrega" />
         <ul>
           <li>
             <FiAlertTriangle />

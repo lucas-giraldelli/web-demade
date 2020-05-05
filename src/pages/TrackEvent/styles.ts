@@ -115,16 +115,19 @@ export const TrackEventSection = styled.section`
     max-width: 450px;
     width: 100%;
     margin-left: 57px;
-
     h2 {
       margin-top: 78px;
       margin-bottom: 23px;
       color: black;
     }
 
-    div {
+    input[type='text'] {
+      margin-top: 25px;
       margin-left: 0px;
       margin-bottom: 20px;
+      width: 100%;
+      padding: 12px 20px;
+      box-sizing: border-box;
     }
 
     ul {
@@ -155,7 +158,7 @@ export const TrackEventSection = styled.section`
     }
     nav {
       color: black;
-      margin-top: 55px;
+      margin-top: 65px;
       text-align: center;
     }
   }

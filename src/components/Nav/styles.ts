@@ -11,6 +11,12 @@ export const Container = styled.nav`
   align-items: center;
   justify-content: flex-end;
 
+  a {
+    position: relative;
+    right: 750px;
+    color: #606060;
+  }
+
   button {
     display: flex;
     align-items: center;

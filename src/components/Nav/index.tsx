@@ -1,10 +1,14 @@
 import React from 'react';
-import { FiBell, FiSearch } from 'react-icons/fi';
+import { FiBell, FiSearch, FiBox } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import { Container, NavigationBar } from './styles';
 
 const Nav: React.FC = () => (
   <NavigationBar>
     <Container>
+      <Link to="/dashboard">
+        <FiBox size={22} />
+      </Link>
       <button type="button">
         <FiBell size={22} />
       </button>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Nav from '../../components/Nav';
 
@@ -12,14 +13,14 @@ const Dashboard: React.FC = () => (
     <Nav />
     <h1>Escolha uma opção</h1>
     <MenuSection>
-      <a href="NewEvent">
+      <Link to="/newevent">
         <img src={imgNewEvent} alt="newEvent" width={146} />
         <p>Novo evento</p>
-      </a>
-      <a href="delivery">
+      </Link>
+      <Link to="/trackevent">
         <img src={imgDelivery} alt="Delivery" width={146} />
-        <p>Novo evento</p>
-      </a>
+        <p>Acompanhar entrega</p>
+      </Link>
     </MenuSection>
   </Container>
 );

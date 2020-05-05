@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form } from '@unform/web';
+import { Link } from 'react-router-dom';
 
 import {
   FiHash,
@@ -7,6 +8,7 @@ import {
   FiGift,
   FiDollarSign,
   FiMaximize2,
+  FiArrowLeft,
 } from 'react-icons/fi';
 import Nav from '../../components/Nav';
 import Input from '../../components/Input';
